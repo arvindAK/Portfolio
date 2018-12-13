@@ -8,7 +8,7 @@ const Hero = () => (
     </ul>
     <div className="hero-text">
       <h1>Hello, I am Arvind</h1>
-      <h3>And I'm a web developer</h3>
+      <h3>Wellcome to my portfolio!</h3>
       <a href="#portfolio">View Portfolio</a>
       <img src='img/hero2.png' />
     </div>

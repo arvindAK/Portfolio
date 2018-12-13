@@ -40,12 +40,6 @@ const reactProjects = [
 ]
 
 const treehouseProjects = [
-  {title: "Random Quote Generator",
-  description: "Displays a quote from an array of 10 quotes and changes the background colour every 30 seconds or on the users click.",
-  link: "https://arvindak.github.io/THFS-Project1_QuotesDisplay/#",
-  img: "img/treehouse/quote.png"
-  },
-
   {title: "Pagination and dynamic filtering",
   description: "Dynamicly search and filter a dataset of students.",
   link: "https://arvindak.github.io/THFS-Project2_Pagination/#",
