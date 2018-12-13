@@ -1,32 +1,299 @@
-.App {
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*•••••••• NAV ••••••••••••*/
+
+.hero-bg ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.hero-bg li {
+  float: right;
+}
+
+.hero-bg li a {
+  display: block;
+  color: white;
+  font-weight: 500;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/* Change the link color to #111 (black) on hover */
+.hero-bg li a:hover {
+  background-color: #111;
+  transition: .5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/*•••••••• HERO ••••••••••••*/
+.hero-bg {
+  background-image: linear-gradient(to top right, #000, #2d2d2d);
+  height: 85vh;
+}
+
+.hero-text {
+  height: 70%;
+  width: 90%;
+  padding: 3em;
+  color: white;
+  display:inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+  grid-column-gap: 5em;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  grid-template-areas:
+    ". image"
+    "header image"
+    "sub_header image"
+    "button image"
+    ". image";
+}
+
+.hero-text h1 {
+  grid-area: header;
+}
+
+.hero-text h3 {
+  grid-area: sub_header;
+}
+
+.hero-text a, .card a {
+  grid-area: button;
+  border-radius: 2px;
+  border: none;
+  height: 1em;
+
+  text-decoration: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-text a:hover, .card a:hover {
+  background-color: #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-text a:hover + img {
+  transform: rotate(360deg);
+  transition: 1s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-text img {
+  width: 60vh;
+  height: 60vh;
+  grid-area: image;
+}
+
+/*•••••••• ABOUT ••••••••••••*/
+
+section {
+  padding: 3em;
+}
+
+#about {
+  background-color: linear-gradient(to top right, #fff, #D3D3D3);
+}
+
+#about .aboutMeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .programmingTimeLine {
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+.timeLine {
+  position: relative;
+  height: 240px;
+  width: 800px;
+  margin: 5em 0;
+  display: inline-block;
+}
+
+#about .timeL {
+  position: absolute;
+  background: url('images/time.png');
+  height: 240px;
+  width: 800px;
+  background-size: 800px 240px;
+  background-repeat: no-repeat;
+}
+
+#about .time > span {
+  opacity: 0;
+  color: white;
+  background-color: grey;
+  padding: 1em;
+  width: 200px;
+}
+
+#about .x2014 {
+  background: url('images/2014.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 47px;
+  top: 51px;
+  width: 141px;
+  height: 141px;
+  z-index: 10;
+}
+
+#about .x2014:hover {
+  background: url('images/2014Hover.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#about .x2014:hover > span {
+  opacity: 1;
+  position: absolute;
+  top: -120px;
+  left: -45px;
+  transition: 1s;
+}
+
+#about .x2016 {
+  background: url('images/2016.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 235px;
+  top: 48px;
+  width: 141px;
+  height: 141px;
+  z-index: 10;
+}
+
+#about .x2016:hover {
+  background: url('images/2016Hover.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#about .x2016:hover > span {
+  opacity: 1;
+  position: absolute;
+  bottom: -120px;
+  left: -45px;
+  transition: 1s;
+}
+
+#about .x2018 {
+  background: url('images/2018.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 235px;
+  top: 51px;
+  width: 141px;
+  height: 141px;
+  z-index: 10;
+}
+
+#about .x2018:hover {
+  background: url('images/2018Hover.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#about .x2018:hover > span {
+  opacity: 1;
+  position: absolute;
+  top: -140px;
+  left: -45px;
+  transition: 1s;
+}
+
+#about .now {
+  background: url('images/now.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right:47px;
+  top: 48px;
+  width: 141px;
+  height: 141px;
+  z-index: 10;
+}
+
+#about .now:hover {
+  background: url('images/nowHover.png');
+  background-size: 141px 141px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#about .now:hover > span {
+  opacity: 1;
+  position: absolute;
+  bottom: -140px;
+  left: -45px;
+  transition: 1s;
+}
+
+#about .me {
+
+  height: 300px;
+  width: 300px;
+}
+
+/*•••••••• PORTFOLIO ••••••••••••*/
+
+#portfolio {
+  background-image: url('images/portBG.png');
+  object-fit: contain;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.card {
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  padding: 1em;
+  padding-bottom: 3em;
+  background-image: linear-gradient(to top right, #000, #2d2d2d);
+  color: white;
+}
+
+.card p {
+  padding-bottom: 1em;
+}
+
+.card a {
+  position: absolute;
+  bottom: 1em;;
+}
+
+.card img {
+  width: 100%;
 }
