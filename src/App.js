@@ -14,6 +14,7 @@ class App extends Component {
         </section>
         <section id="portfolio">
           <h2>Portfolio</h2>
+          <Card projects={fullstackProjects} type={"Full Stack"} />
           <Card projects={reactProjects} type={"React"} />
           <Card projects={treehouseProjects} type={"Treehouse"} />
         </section>
@@ -36,6 +37,12 @@ const reactProjects = [
   description: "Uses a Weather API to fetch look up recipes containing an ingredient.",
   link: "https://arvindak.github.io/weather-app/",
   img: "img/react/weather-app.png"
+  },
+
+  {title: "Todo App",
+  description: "Track tasks and save them to the local browsers cache",
+  link: "https://arvindak.github.io/Todo-App/",
+  img: "img/react/todo-app.png"
   }
 ]
 
@@ -52,15 +59,17 @@ const treehouseProjects = [
   img: "img/treehouse/form.png"
   },
 
-  {title: "Tic-Tac-Toe",
-  description: "Play against a local player or your computer.",
-  link: "https://arvindak.github.io/THFS-Project4_Tic-Tac-Toe/#",
-  img: "img/treehouse/game.png"
-  },
-
   {title: "API Awesome Employee Fetching",
   description: "Fetch 12 users from an API, display them in cards, using modals to inspect each card.",
   link: "https://arvindak.github.io/THFS-Project5-API/#",
   img: "img/treehouse/api.png"
   }
 ];
+
+const fullstackProjects = [
+  {title: "Amazon Prime Movie Filter",
+  description: "Filter Amazon Prime movies via IMDB, Amazon star rating, number of ratings, genre and year",
+  link: "https://morning-crag-36301.herokuapp.com/#",
+  img: "img/fullStack/movieFilter.png"
+  }
+]
