@@ -44,7 +44,7 @@ const reactProjects = [
 
   {
     title: "Todo App",
-    description: "Track tasks and save them to the local browsers cache",
+    description: "Track tasks and save them to the local browsers cache.",
     link: "https://arvindak.github.io/Todo-App/",
     img: "img/react/todo-app.png"
   }
@@ -79,14 +79,14 @@ const fullstackProjects = [
   {
     title: "Amazon Prime Movie Filter",
     description:
-      "Filter Amazon Prime movies via IMDB, Amazon star rating, number of ratings, genre and year",
+      "Filter Amazon Prime movies via IMDB, Amazon star rating, number of ratings, genre and year.",
     link: "https://morning-crag-36301.herokuapp.com/#",
     img: "img/fullStack/movieFilter.png"
   },
   {
     title: "Waitrose Recipe Finder",
     description:
-      "Sort recipes via nutritional content and filter by dietary requirements or food type",
+      "Sort recipes via nutritional content and filter by dietary requirements or food type.",
     link: "https://fast-eyrie-78022.herokuapp.com/",
     img: "img/fullStack/recipeSort.png"
   }
