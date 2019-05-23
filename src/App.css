@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
 }
 /*•••••••• NAV ••••••••••••*/
 
@@ -36,7 +40,7 @@ h1, h2, h3, h4 {
 /* Change the link color to #111 (black) on hover */
 .hero-bg li a:hover {
   background-color: #111;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /*•••••••• HERO ••••••••••••*/
@@ -61,7 +65,8 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.hero-text a, .card a {
+.hero-text a,
+.card a {
   grid-area: button;
   border-radius: 2px;
   border: none;
@@ -79,13 +84,14 @@ h1, h2, h3, h4 {
   transition: 0.5s;
 }
 
-.hero-text a:hover, .card a:hover {
+.hero-text a:hover,
+.card a:hover {
   background-color: #555;
   color: white;
 }
 
 .ball {
-  position:absolute;
+  position: absolute;
   left: 40vw;
   bottom: 0;
   margin-left: 5em;
@@ -93,13 +99,13 @@ h1, h2, h3, h4 {
   height: 100px;
   border-radius: 50%;
   background-image: linear-gradient(to top right, #00222a, #004455);
-  animation: bounce 1s cubic-bezier(.5,.05,0.75,.5);
+  animation: bounce 1s cubic-bezier(0.5, 0.05, 0.75, 0.5);
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
 .ball2 {
-  position:absolute;
+  position: absolute;
   left: 50vw;
   bottom: 0;
   margin-left: 5em;
@@ -107,54 +113,63 @@ h1, h2, h3, h4 {
   height: 100px;
   border-radius: 50%;
   background-image: linear-gradient(to top right, #660000, red);
-  animation: bounce 1s cubic-bezier(.5,.05,0.95,.5);
+  animation: bounce 1s cubic-bezier(0.5, 0.05, 0.95, 0.5);
   animation-direction: alternate;
-  animation-delay: .33s;
+  animation-delay: 0.33s;
   animation-iteration-count: infinite;
 }
 
 .ball3 {
-  position:absolute;
+  position: absolute;
   left: 60vw;
   bottom: 0;
   margin-left: 5em;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: linear-gradient(to top right, #7f5701, #FFAE03);
-  animation: bounce 1s cubic-bezier(.5,.05,0.95,.5);
+  background-image: linear-gradient(to top right, #7f5701, #ffae03);
+  animation: bounce 1s cubic-bezier(0.5, 0.05, 0.95, 0.5);
   animation-direction: alternate;
-  animation-delay: .66s;
+  animation-delay: 0.66s;
   animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
-  from {transform: translateY(0) rotate(0deg);}
-  to {transform: translateY(calc(-45vh + 50px)) rotate(180deg);}
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(calc(-45vh + 50px)) rotate(180deg);
+  }
 }
 
 @keyframes fadeinhero {
-    0%, 40% {
-      opacity: 0;
-      transform: scale(0.8);
-       }
-    100%   {
-      opacity: 1;
-      transform: scale(1);
-    }
+  0%,
+  40% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes fadein {
-    0%, 40% { opacity: 0; }
-    100%   { opacity: 1; }
+  0%,
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 /*•••••••• ABOUT ••••••••••••*/
 
 section {
   padding: 3em;
-  background-color: black
+  background-color: black;
 }
 
 #about {
@@ -206,7 +221,7 @@ section {
   padding-right: 5em;
   position: relative;
   list-style-type: none;
-  display:inline-block;
+  display: inline-block;
 }
 
 #about .printer {
@@ -218,7 +233,7 @@ section {
 }
 
 #about .print .printerFrame {
-  background: url('images/printerFrame.png');
+  background: url("images/printerFrame.png");
   background-size: 100px 21px;
   background-repeat: no-repeat;
   width: 100px;
@@ -227,7 +242,7 @@ section {
 }
 
 #about .print .printerHead {
-  background: url('images/printerHead.png');
+  background: url("images/printerHead.png");
   background-size: 27px 38px;
   background-repeat: no-repeat;
   width: 27px;
@@ -260,7 +275,7 @@ section {
 }
 
 #about .bike .frame {
-  background: url('images/bike.png');
+  background: url("images/bike.png");
   background-size: 100px 47px;
   background-repeat: no-repeat;
   width: 100px;
@@ -269,26 +284,26 @@ section {
 }
 
 #about .bike .fwheel {
-  background: url('images/wheel.png');
+  background: url("images/wheel.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  right:3px;
-  top:14px;
+  right: 3px;
+  top: 14px;
   display: inline-block;
   position: absolute;
   z-index: 0;
 }
 
 #about .bike .bwheel {
-  background: url('images/wheel.png');
+  background: url("images/wheel.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  right:64px;
-  top:14px;
+  right: 64px;
+  top: 14px;
   display: inline-block;
   position: absolute;
   transition: 1s;
@@ -304,7 +319,7 @@ section {
 }
 
 #about .stem {
-  background: url('images/stem.png');
+  background: url("images/stem.png");
   background-size: 13px 63px;
   background-repeat: no-repeat;
   width: 13px;
@@ -313,26 +328,26 @@ section {
 }
 
 #about .leaf1 {
-  background: url('images/leaf1.png');
+  background: url("images/leaf1.png");
   background-size: 25px 23px;
   background-repeat: no-repeat;
   width: 25px;
   height: 23px;
-  right:16px;
-  top:25px;
+  right: 16px;
+  top: 25px;
   display: inline-block;
   position: absolute;
   z-index: 1;
 }
 
 #about .leaf2 {
-  background: url('images/leaf2.png');
+  background: url("images/leaf2.png");
   background-size: 22px 23px;
   background-repeat: no-repeat;
   width: 22px;
   height: 23px;
-  right:48px;
-  top:-3px;
+  right: 48px;
+  top: -3px;
   display: inline-block;
   position: absolute;
   z-index: 1;
@@ -354,31 +369,34 @@ section {
   transition: 1s;
 }
 
-
 @-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
 @-webkit-keyframes shake {
-
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0);
   }
 }
@@ -386,7 +404,7 @@ section {
 /*•••••••• PORTFOLIO ••••••••••••*/
 
 #portfolio {
-  background-image: url('images/portBG.png');
+  background-image: url("images/portBG.png");
   object-fit: contain;
   color: white;
 }
@@ -397,37 +415,90 @@ section {
   grid-gap: 2em;
 }
 
-.card {
+.tilt {
+  cursor: pointer;
   position: relative;
-  border-radius: 4px;
-  margin-bottom: 2em;
-  padding: 1em;
-  padding-bottom: 3em;
-  background-image: linear-gradient(to top right, #000, #2d2d2d);
-  color: white;
 }
 
-.card p {
-  padding-bottom: 1em;
+.tilt a {
+  text-decoration: none;
 }
 
-.card a {
+.tilt:hover img {
+  filter: opacity(20%);
+  transition: 1s;
+}
+
+.tilt:hover h2,
+.tilt:hover p,
+.tilt:hover .dep {
+  opacity: 1;
+  transition: 1s;
+  color: #fff;
+}
+
+.tilt p,
+.tilt .dep {
   position: absolute;
-  bottom: 1em;;
+  opacity: 0;
+  left: 20px;
+  right: 20px;
+  color: #000;
 }
 
-.card img {
-  width: 100%;
+.tilt .dep hr {
+  margin: 5px 0;
+  grid-column: span 2;
 }
 
-@media only screen and (max-width: 1100px) {
+.tilt .dep h4 {
+  margin: 5px 0;
+  grid-column: span 2;
+}
 
+.tilt:hover .dep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tilt .dep span {
+  text-transform: capitalize;
+}
+
+.tilt .dep span:hover {
+  color: red;
+  transition: 1s;
+}
+
+.tilt p {
+  top: 40px;
+}
+
+.tilt .dep {
+  bottom: 10px;
+}
+
+.tilt h2 {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 20px;
+  color: #000;
+}
+
+.tilt,
+.tilt img {
+  height: 232px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 1350px) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
   #about .aboutMeContainer {
     grid-template-rows: auto;
     grid-auto-columns: 1fr;
@@ -439,6 +510,7 @@ section {
 
   #about .hobbies {
     margin-top: 3em;
+    transition: 1s;
   }
 
   .container {
@@ -446,29 +518,104 @@ section {
   }
 
   .profile {
-    max-width: 80vw
+    max-width: 80vw;
+    transition: 1s;
   }
 
   #about .profile {
     margin-top: 0;
+    transition: 1s;
   }
 
   .aboutMeContainer {
     justify-items: center;
+    transition: 1s;
   }
 }
 
+@media only screen and (max-width: 485px) {
+  .tilt,
+  .tilt img {
+    height: 162px;
+    width: 280px;
+    transition: 1s;
+  }
+
+  .dep {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   #about {
     padding: 1em;
+    transition: 1s;
   }
-
-
 }
 
 @media only screen and (max-width: 350px) {
   #about ul li {
     padding-right: 0;
+    transition: 1s;
   }
+}
+
+/************** Footer ***********/
+
+footer {
+  background-image: linear-gradient(to top right, #000, #2d2d2d);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  margin: 0 15px;
+}
+
+footer img {
+  background: #ddd;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+footer a:nth-child(1) img {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+footer a:nth-child(3) img {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+footer img:hover {
+  animation: scale 1s;
+  animation-direction: alternate;
+  transition: 0.5s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1), rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1.2), rotate(0deg);
+  }
+}
+
+footer a:nth-child(1) img:hover {
+  background-color: #004455;
+}
+footer a:nth-child(2) img:hover {
+  background-color: red;
+}
+footer a:nth-child(3) img:hover {
+  background-color: #ffae03;
 }
