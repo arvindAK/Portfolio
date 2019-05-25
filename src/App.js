@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Hero from "./components/Hero";
 import About from "./components/About";
 import Tile from "./components/Tile";
+import Nav from "./components/Nav";
 import { backend } from "./components/Projects";
 import { frontend } from "./components/Projects";
 import Footer from "./components/Footer";
@@ -12,14 +12,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Hero />
-        <section id="about">
-          <About />
-        </section>
+        <Nav />
         <section id="portfolio">
-          <h2>Portfolio</h2>
+          <h1>Portfolio</h1>
           <Tile projects={frontend} type={"Front End"} />
           <Tile projects={backend} type={"Back End"} />
+          <span>
+            The backend projects are deployed on Heroku, so please allow a few
+            seconds for them to intialy load.
+          </span>
+        </section>
+        <section id="about">
+          <About />
         </section>
         <Footer />
       </div>
