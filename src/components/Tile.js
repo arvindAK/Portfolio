@@ -38,9 +38,16 @@ const Tile = ({ projects, type }) => (
               <h4>
                 Back End: <span>{proj.flow.backend}</span>
               </h4>
-              <h4>
-                Front End: <span>{proj.flow.frontend}</span>
-              </h4>
+              {proj.flow.frontend === "CSS" && (
+                <h4>
+                  Styled: <span>{proj.flow.frontend}</span>
+                </h4>
+              )}
+              {proj.flow.frontend !== "CSS" && (
+                <h4>
+                  Front End: <span>{proj.flow.frontend}</span>
+                </h4>
+              )}
             </div>
           )}
         </div>

@@ -7,8 +7,9 @@ const About = () => (
       <div className="aboutMeContainer">
         <div className="intro">
           <p>
-            Website design intrigues me, enabling users to perceive data in
-            multiple dimensions to build a latticework of tools.
+            Website design intrigues me because we can provide users with tools,
+            to better understand challenges and solutions, and everything
+            inbetween, by presenting data in novel way.
           </p>
           <blockquote>
             "I suppose it is tempting, if the only tool you have is a hammer, to
@@ -17,7 +18,8 @@ const About = () => (
           <span className="quote_author">Abraham Maslow</span>
           <p>
             Learning is a life long passion of mine, since not only does it open
-            new doors but also revaluate what I already know in a new light!
+            new doors but also allows me to revaluate what I already know in a
+            new light!
           </p>
         </div>
         <img className="profile" src="img/me.png" alt="profile" />

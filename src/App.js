@@ -14,12 +14,12 @@ class App extends Component {
       <div className="App">
         <Nav />
         <section id="portfolio">
-          <h1>Portfolio</h1>
+          <h2>Portfolio</h2>
           <Tile projects={frontend} type={"Front End"} />
           <Tile projects={backend} type={"Back End"} />
           <span>
             The backend projects are deployed on Heroku, so please allow a few
-            seconds for them to intialy load.
+            seconds for them to initially load.
           </span>
         </section>
         <section id="about">
